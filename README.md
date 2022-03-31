@@ -1,4 +1,4 @@
-# HTL-VRProject with XRInteractionToolkit !Template!
+# HTL-VRProject with XRInteractionToolkit Tim Toller
 
 ### Project description: 
 This project serves as sample project for spatial audio. 
@@ -29,4 +29,4 @@ For testing without a headset, use the XR Device Simulator (included in the xr i
 
 ### Limitations/Problems: 
 
-Copyright by smeerws :)
+> Copyright by Tim Toller
