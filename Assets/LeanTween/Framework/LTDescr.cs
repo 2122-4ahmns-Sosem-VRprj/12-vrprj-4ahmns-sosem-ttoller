@@ -211,7 +211,7 @@ public class LTDescr
 
 	private void initFromInternal(){ this.fromInternal.x = 0; }
 
-    public LTDescr setOffset( Vector3 offset ){
+    public LTDescr SetOffset( Vector3 offset ){
         this.toInternal = offset;
         return this;
     }

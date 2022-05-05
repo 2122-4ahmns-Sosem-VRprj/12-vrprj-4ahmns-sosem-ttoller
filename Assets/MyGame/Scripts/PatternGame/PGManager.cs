@@ -1,3 +1,5 @@
+using System;
+using System.Linq;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -5,63 +7,86 @@ using UnityEngine;
 public class PGManager : MonoBehaviour
 {
     public AudioClip successSound;
+    public AudioClip finishSound;
     public AudioClip failSound;
     public AudioClip displaySound;
     public PGDisplay[] displays;
     public PGButton[] buttons;
-    private int[] correctPattern;
-    private int currentIndex;
+    public Material[] materials;
+    public int[] correctPattern;
+    public int currentIndex;
+    public int nextCorrect;
 
     private void Start()
     {
-        correctPattern = generateList();
-        currentIndex = 0;
-    }
-    private void giveHint()
-    {
-        int nextId = correctPattern[currentIndex];
-        displays[currentIndex].setPending();
+        for (int i = 0; i < 9; i++)
+        {
+            Material mat = materials[i];
 
-        AudioSource.PlayClipAtPoint(displaySound, transform.position);
+            PGDisplay display = displays[i];
+            display.id = i;
+            display.gameObject.GetComponent<Renderer>().material = mat;
+            display.material = mat;
+
+            PGButton button = buttons[i];
+            button.id = i;
+            button.gameObject.GetComponent<Renderer>().material = mat;
+        }
+        ResetDisplays();
     }
-    public void pressedButton(int id)
+    private void GiveHint()
+    {
+        displays[nextCorrect].SetPending();
+    }
+    public void PressedButton(int id)
     {
         if (correctPattern[currentIndex] == id)
         {
+            int lastId = correctPattern[currentIndex];
             currentIndex++;
+            nextCorrect = correctPattern[currentIndex];
             if (currentIndex == correctPattern.Length)
             {
-                AudioSource.PlayClipAtPoint(successSound, Camera.main.transform.position);
-                winGame();
+                PlayClipAtCamera(finishSound);
+                GameMaster.FinishGame();
+            }
+            else
+            {
+                PlayClipAtCamera(successSound);
+                Debug.Log("Correct input: now at " + currentIndex + "/" + correctPattern.Length + ", next correct input is " + nextCorrect);
+                displays[lastId].SetOn();
+                GiveHint();
             }
         }
         else
         {
-            AudioSource.PlayClipAtPoint(failSound, Camera.main.transform.position);
-            resetDisplays();
-            correctPattern = generateList();
-            currentIndex = 0;
-            giveHint();
+            Debug.Log("Wrong input: expected " + correctPattern[currentIndex] + ", got " + id);
+            PlayClipAtCamera(failSound);
+            ResetDisplays();
+            GiveHint();
         }
     }
-    private void winGame()
+    private void ResetDisplays()
     {
-        Debug.Log("You win!");
-    }
-    private void resetDisplays()
-    {
+        correctPattern = GenerateList();
+        currentIndex = 0;
+        nextCorrect = correctPattern[0];
         foreach (PGDisplay display in displays)
         {
-            display.setOff();
+            display.SetOff();
         }
+        GiveHint();
     }
-    private int[] generateList()
+    private int[] GenerateList()
     {
-        int[] list = new int[displays.Length];
-        for (int i = 0; i < correctPattern.Length; i++)
-        {
-            list[i] = Random.Range(0, buttons.Length);
-        }
-        return list;
+        int[] array = { 0, 1, 2, 3, 4, 5, 6, 7, 8 };
+        System.Random random = new System.Random();
+        array = array.OrderBy(x => random.Next()).ToArray();
+        Debug.Log("Pattern: " + String.Join(", ", array));
+        return array;
+    }
+    private void PlayClipAtCamera(AudioClip clip)
+    {
+        AudioSource.PlayClipAtPoint(clip, Camera.main.transform.position);
     }
 }
