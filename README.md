@@ -1,31 +1,7 @@
-# HTL-VRProject with XRInteractionToolkit Tim Toller
-
-### Development platform: 
-| Technology | Name |
-|---|---|
-| OS | Windows 10 |
-| Game Engine | Unity 2020.3.18f1 |
-| IDE | Visual Studio Code (With extensions) |
-
-To learn how to set up VS code with Unity, check [here](https://code.visualstudio.com/docs/other/unity).
-
-### Packages
-| Package Name | Package ID | Version |
-|:---|:---|:---|
-| JetBrains Rider Editor | com.unity.ide.rider | 2.0.7 |
-| Oculus XR Plugin | com.unity.xr.oculus | 1.10.0 |
-| Test Framework | com.unity.test-framework | 1.1.29 |
-| TextMeshPro | com.unity.textmeshpro | 3.0.6 |
-| Timeline | com.unity.timeline | 1.4.8 |
-| Unity UI | com.unity.ugui | 1.0.0 |
-| Universal RP | com.unity.render-pipelines.universal | 10.6.0 |
-| Version Control | com.unity.collab-proxy | 1.9.0 |
-| Visual Studio Code Editor | com.unity.ide.vscode | 1.2.5 |
-| Visual Studio Editor | com.unity.ide.visualstudio | 2.0.11 |
-| XR Interaction Toolkit | com.unity.xr.interaction.toolkit | 2.0.0-pre.7 |
-| XR Plugin Management | com.unity.xr.management | 4.0.7 |
-
-Generated with my [Unity manifest to markdown converter](https://timtoller.github.io/unity-manifest-to-markdown/)
+<h1 align="center">HTL-VRProject with XRInteractionToolki</h1>
+<div align="center">Documentation of my VR Game</div>
+<div align="center">2021/2022</div>
+<div align="center">13 - Tim Toller</div>
 
 ### Feeling & Gründe das Spiel zu spielen
 
@@ -94,6 +70,33 @@ Drückt der Spieler auf einen Falschen Knopf wird ein dramatischer Sound abgespi
 19. Spiel komplett play testen
 20. Build erstellen
 21. Endabgabe
+
+### Development platform: 
+| Technology | Name |
+|---|---|
+| OS | Windows 10 |
+| Game Engine | Unity 2020.3.18f1 |
+| IDE | Visual Studio Code (With extensions) |
+
+To learn how to set up VS code with Unity, check [here](https://code.visualstudio.com/docs/other/unity).
+
+### Packages
+| Package Name | Package ID | Version |
+|:---|:---|:---|
+| JetBrains Rider Editor | com.unity.ide.rider | 2.0.7 |
+| Oculus XR Plugin | com.unity.xr.oculus | 1.10.0 |
+| Test Framework | com.unity.test-framework | 1.1.29 |
+| TextMeshPro | com.unity.textmeshpro | 3.0.6 |
+| Timeline | com.unity.timeline | 1.4.8 |
+| Unity UI | com.unity.ugui | 1.0.0 |
+| Universal RP | com.unity.render-pipelines.universal | 10.6.0 |
+| Version Control | com.unity.collab-proxy | 1.9.0 |
+| Visual Studio Code Editor | com.unity.ide.vscode | 1.2.5 |
+| Visual Studio Editor | com.unity.ide.visualstudio | 2.0.11 |
+| XR Interaction Toolkit | com.unity.xr.interaction.toolkit | 2.0.0-pre.7 |
+| XR Plugin Management | com.unity.xr.management | 4.0.7 |
+
+Generated with my [Unity manifest to markdown converter](https://timtoller.github.io/unity-manifest-to-markdown/)
 
 ## Software/Hardware Requirements: 
 Oculus hardware requirements https://support.oculus.com/248749509016567/
