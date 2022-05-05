@@ -11,7 +11,7 @@ public class PGDisplay : MonoBehaviour
     public void SetOff()
     {
         state = DisplayStates.OFF;
-        Color color = material.GetColor("_EmissionColor");
+        Color color = material.GetColor("_Color");
         material.SetColor("_EmissionColor", color * 0);
     }
     public void SetPending()
@@ -23,7 +23,7 @@ public class PGDisplay : MonoBehaviour
     {
         Debug.Log("Display " + id + " is on");
         state = DisplayStates.ON;
-        Color color = material.GetColor("_EmissionColor");
+        Color color = material.GetColor("_Color");
         material.SetColor("_EmissionColor", color * 2f);
     }
 }
