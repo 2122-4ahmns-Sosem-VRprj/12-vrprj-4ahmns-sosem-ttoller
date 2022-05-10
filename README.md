@@ -98,6 +98,9 @@ To learn how to set up VS code with Unity, check [here](https://code.visualstudi
 
 Generated with my [Unity manifest to markdown converter](https://timtoller.github.io/unity-manifest-to-markdown/)
 
+## Sounds and Assets:
+Sounds provided by [videvo](https://www.videvo.net)
+
 ## Software/Hardware Requirements: 
 Oculus hardware requirements https://support.oculus.com/248749509016567/
 You need a VR headset in this case an Oculus Rift/Quest/Quest2
