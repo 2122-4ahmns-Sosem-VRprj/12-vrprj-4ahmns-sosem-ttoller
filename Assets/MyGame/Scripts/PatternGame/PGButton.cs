@@ -22,4 +22,8 @@ public class PGButton : MonoBehaviour
         }
         manager.PressedButton(id);
     }
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.tag == "Controller") OnButtonPressed();
+    }
 }

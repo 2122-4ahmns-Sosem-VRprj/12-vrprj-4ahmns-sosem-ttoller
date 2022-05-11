@@ -40,6 +40,8 @@ public class PGManager : MonoBehaviour
     }
     public void PressedButton(int id)
     {
+        //check if the button was already pressed
+        if (displays[id].state==PGDisplay.DisplayStates.ON) return;
         if (correctPattern[currentIndex] == id)
         {
             int lastId = correctPattern[currentIndex];
