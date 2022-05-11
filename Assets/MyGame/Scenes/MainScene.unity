@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.0007200191, g: 0.0018433576, b: 0.05432608, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0.99999946, b: 0.99999946, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -4185,7 +4185,7 @@ GameObject:
   - component: {fileID: 1577749885}
   m_Layer: 0
   m_Name: LeftHand Controller
-  m_TagString: Untagged
+  m_TagString: Controller
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5451,7 +5451,7 @@ GameObject:
   - component: {fileID: 2041961803}
   m_Layer: 0
   m_Name: RightHandBaseController
-  m_TagString: Untagged
+  m_TagString: Controller
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5610,10 +5610,10 @@ MonoBehaviour:
   m_TrackingStateAction:
     m_UseReference: 0
     m_Action:
-      m_Name: 
+      m_Name: Tracking State
       m_Type: 0
       m_ExpectedControlType: 
-      m_Id: 
+      m_Id: 5995a533-469f-475e-a384-8daa1f18dd4f
       m_Processors: 
       m_Interactions: 
       m_SingletonActionBindings: []
@@ -5634,10 +5634,10 @@ MonoBehaviour:
   m_SelectActionValue:
     m_UseReference: 0
     m_Action:
-      m_Name: 
+      m_Name: Select Action Value
       m_Type: 0
       m_ExpectedControlType: 
-      m_Id: 
+      m_Id: 77b8b895-7956-4a02-aa85-880e8d31c65a
       m_Processors: 
       m_Interactions: 
       m_SingletonActionBindings: []
@@ -5658,10 +5658,10 @@ MonoBehaviour:
   m_ActivateActionValue:
     m_UseReference: 0
     m_Action:
-      m_Name: 
+      m_Name: Activate Action Value
       m_Type: 0
       m_ExpectedControlType: 
-      m_Id: 
+      m_Id: 2315417f-e402-4c5a-b923-dc4210b56fcf
       m_Processors: 
       m_Interactions: 
       m_SingletonActionBindings: []
@@ -5682,10 +5682,10 @@ MonoBehaviour:
   m_UIPressActionValue:
     m_UseReference: 0
     m_Action:
-      m_Name: 
+      m_Name: UI Press Action Value
       m_Type: 0
       m_ExpectedControlType: 
-      m_Id: 
+      m_Id: 20c32b82-e828-44c1-8ccb-ab6d65f2d48a
       m_Processors: 
       m_Interactions: 
       m_SingletonActionBindings: []
