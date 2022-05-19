@@ -91,4 +91,7 @@ public class PGManager : MonoBehaviour
     {
         AudioSource.PlayClipAtPoint(clip, Camera.main.transform.position);
     }
+    public GameObject GetNextButton() {
+        return buttons[nextCorrect].gameObject;
+    }
 }
