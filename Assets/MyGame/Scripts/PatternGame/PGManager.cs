@@ -47,14 +47,15 @@ public class PGManager : MonoBehaviour
         {
             int lastId = correctPattern[currentIndex];
             currentIndex++;
-            nextCorrect = correctPattern[currentIndex];
             if (currentIndex == correctPattern.Length)
             {
                 PlayClipAtCamera(finishSound);
+                displays[lastId].SetOn();
                 GameMaster.FinishGame();
             }
             else
             {
+                nextCorrect = correctPattern[currentIndex];
                 PlayClipAtCamera(successSound);
                 Debug.Log("Correct input: now at " + currentIndex + "/" + correctPattern.Length + ", next correct input is " + nextCorrect);
                 displays[lastId].SetOn();

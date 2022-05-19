@@ -26,7 +26,7 @@ public class PGButton : MonoBehaviour
     }
     public void PlaySound()
     {
-        print("Play sound at " + transform.position);
+        print("Play sound at " + transform.position + ", from " + id);
         audioSource.Play();
     }
 }
