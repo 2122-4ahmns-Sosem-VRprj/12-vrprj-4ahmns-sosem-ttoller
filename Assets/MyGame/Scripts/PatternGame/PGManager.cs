@@ -29,6 +29,7 @@ public class PGManager : MonoBehaviour
             display.material = mat;
 
             PGButton button = buttons[i];
+            display.button = button;
             button.id = i;
             button.gameObject.GetComponent<Renderer>().material = mat;
         }
@@ -41,7 +42,7 @@ public class PGManager : MonoBehaviour
     public void PressedButton(int id)
     {
         //check if the button was already pressed
-        if (displays[id].state==PGDisplay.DisplayStates.ON) return;
+        if (displays[id].state == PGDisplay.DisplayStates.ON) return;
         if (correctPattern[currentIndex] == id)
         {
             int lastId = correctPattern[currentIndex];
@@ -60,13 +61,14 @@ public class PGManager : MonoBehaviour
                 GiveHint();
             }
         }
-        else
-        {
-            Debug.Log("Wrong input: expected " + correctPattern[currentIndex] + ", got " + id);
-            PlayClipAtCamera(failSound);
-            ResetDisplays();
-            GiveHint();
-        }
+        //don't reset, too hard otherwise
+        // else
+        // {
+        //     Debug.Log("Wrong input: expected " + correctPattern[currentIndex] + ", got " + id);
+        //     PlayClipAtCamera(failSound);
+        //     ResetDisplays();
+        //     GiveHint();
+        // }
     }
     private void ResetDisplays()
     {
@@ -91,7 +93,8 @@ public class PGManager : MonoBehaviour
     {
         AudioSource.PlayClipAtPoint(clip, Camera.main.transform.position);
     }
-    public GameObject GetNextButton() {
+    public GameObject GetNextButton()
+    {
         return buttons[nextCorrect].gameObject;
     }
 }
