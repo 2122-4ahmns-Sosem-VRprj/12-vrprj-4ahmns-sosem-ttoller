@@ -1,4 +1,4 @@
-<h1 align="center">HTL-VRProject with XRInteractionToolki</h1>
+<h1 align="center">HTL-VRProject with XRInteractionToolkit</h1>
 <div align="center">Documentation of my VR Game</div>
 <div align="center">2021/2022</div>
 <div align="center">13 - Tim Toller</div>
@@ -78,7 +78,7 @@ Drückt der Spieler auf einen Falschen Knopf wird ein dramatischer Sound abgespi
 | Game Engine | Unity 2020.3.18f1 |
 | IDE | Visual Studio Code (With extensions) |
 
-To learn how to set up VS code with Unity, check [here](https://code.visualstudio.com/docs/other/unity).
+Wie Sie VS-Code mit Unity einrichten können, erfahren Sie [hier] (https://code.visualstudio.com/docs/other/unity).
 
 ### Packages
 | Package Name | Package ID | Version |
@@ -96,24 +96,29 @@ To learn how to set up VS code with Unity, check [here](https://code.visualstudi
 | XR Interaction Toolkit | com.unity.xr.interaction.toolkit | 2.0.0-pre.7 |
 | XR Plugin Management | com.unity.xr.management | 4.0.7 |
 
-Generated with my [Unity manifest to markdown converter](https://timtoller.github.io/unity-manifest-to-markdown/)
+Generiert mit meinem [Unity manifest to markdown converter](https://timtoller.github.io/unity-manifest-to-markdown/)
 
-## Sounds and Assets:
-Sounds provided by [videvo](https://www.videvo.net)
+## Sounds und Assets:
+Sounds bereitgestellt von [videvo](https://www.videvo.net)
 
-## Software/Hardware Requirements: 
-Oculus hardware requirements https://support.oculus.com/248749509016567/
-You need a VR headset in this case an Oculus Rift/Quest/Quest2
+## Software/Hardware-Anforderungen:
+Oculus Hardware-Anforderungen https://support.oculus.com/248749509016567/
+Sie benötigen ein VR-Headset, in diesem Fall ein Oculus Rift/Quest/Quest2
 
-Examples: https://github.com/Unity-Technologies/XR-Interaction-Toolkit-Examples
+Beispiele: https://github.com/Unity-Technologies/XR-Interaction-Toolkit-Examples
 
-When downlaoded, you have compile time errors in the project. To solve them install the XR interaction toolkit package via the Package Manager. (!Enable in Advanced Settings Preview Packages).
+Beim Herunterladen treten Kompilierzeitfehler im Projekt auf. Um diese zu beheben, installieren Sie das XR Interaction Toolkit Paket über den Package Manager.
+
+## Beschränkungen und Änderungen
+Da wir nur ein relativ kleines Zeitfenster hatten das Spiel fertig zu stellen, war es nur noch notwendig ein Minigame umzusetzen, vorrausgesetzt es gibt ein Intro und Outro. Darauf hin habe ich beschlossen nur das zweite Minigame, leicht zu modifizieren und umzusetzen. 
+
+Das Spiel wurde modifiziert zu einem gruseligen Suchspiel. Der User wird zu buttons geleitet die er in der richtigen reihenfolge betätigen muss, als unterstützung hat der Spieler einen Kompass im UI und der nächste Button spielt regelmäßig einen Glocken sound ab, damit man auch auditiv den Weg dorthin finden kann. Außerdem leuchtet der nächste Button auf und blinkt, damit ein visuelles Feedback auch entsteht. Die Reihenfolge und Farbe der Buttons ist randomized. Schafft es der Spieler alle Buttons in der Richtigen reihenfolge zu betätigen, so öffnet sich die Ausgangstür und der Spieler gewinnt. 
 
 ### Target platform: 
 Oculus Rift/S; Quest/2
 
 ### Third party material: 
 
-For testing without a headset, use the XR Device Simulator (included in the xr interaction toolkit package):  https://www.youtube.com/watch?v=d4bTpkvBwrs
+Für Tests ohne Headset verwenden Sie den XR Device Simulator (im xr interaction toolkit Paket enthalten): https://www.youtube.com/watch?v=d4bTpkvBwrs
 
 > Copyright by Tim Toller
