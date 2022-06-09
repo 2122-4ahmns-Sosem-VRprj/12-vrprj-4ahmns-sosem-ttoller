@@ -10,21 +10,16 @@ public class GameMaster : MonoBehaviour
     public static AudioClip _outroSound;
     public AudioClip outroSound;
     public AudioClip music;
-    private static GameObject doorOut;
+    private static GameObject exitTrigger;
     private static AudioSource musicSource;
     public static void FinishGame()
     {
-        LeanTween.rotateY(doorOut, -95, 1.0f);
         PlayClipAtCamera(_outroSound);
-        LeanTween.value(1, 0, 2).setOnUpdate((float val) =>
-        {
-            musicSource.volume = val;
-        });
-
+        exitTrigger.GetComponent<DoorTrigger>().locked = false;
     }
     private void Start()
     {
-        doorOut = GameObject.Find("DoorOut");
+        exitTrigger = GameObject.Find("ExitTrigger");
         _outroSound = outroSound;
         musicSource = Camera.main.GetComponent<AudioSource>();
         musicSource.clip = music;

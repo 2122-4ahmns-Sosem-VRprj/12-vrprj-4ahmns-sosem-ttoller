@@ -111,6 +111,8 @@ Sounds bereitgestellt von [videvo](https://www.videvo.net/royalty-free-sound-eff
 - [Radio](https://sketchfab.com/3d-models/old-radio-ab346aeda5ab4c7882999f491d974619)
 - [Hase](https://sketchfab.com/3d-models/fnaf-security-breach-burntrap-056ddc9b449046de80f3128a982f7fb2)
 - [Door](https://sketchfab.com/3d-models/wooden-door-0643dee368fe4ed983910cf182ff64b8)
+- [Table](https://sketchfab.com/3d-models/bedside-table-2-915fffa0a7d943d0980c835784340c77)
+- [Eggs Red](https://sketchfab.com/3d-models/easter-eggs-red-collection-b79af3f7aa8543518628590f39cd2d31)
 
 ### Texturen
 

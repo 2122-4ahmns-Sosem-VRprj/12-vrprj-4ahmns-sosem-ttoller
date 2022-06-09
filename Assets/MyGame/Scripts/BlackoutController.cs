@@ -12,11 +12,25 @@ public class BlackoutController : MonoBehaviour
     {
         if (!hasShown)
         {
-            LeanTween.value(1, 0, 2).setOnUpdate((float val) =>
-            {
-                hasShown = true;
-                img.color = new Color(0, 0, 0, val);
-            });
+            FadeIn();
         }
+    }
+    public void FadeOut()
+    {
+        LeanTween.value(0, 1, 2).setOnUpdate((float val) =>
+        {
+            img.color = new Color(0, 0, 0, val);
+        }).setOnComplete(() =>
+        {
+            Application.Quit();
+        });
+    }
+    public void FadeIn()
+    {
+        hasShown = true;
+        LeanTween.value(1, 0, 2).setOnUpdate((float val) =>
+        {
+            img.color = new Color(0, 0, 0, val);
+        });
     }
 }
