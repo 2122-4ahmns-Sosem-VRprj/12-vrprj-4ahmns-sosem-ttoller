@@ -49,7 +49,6 @@ public class PGManager : MonoBehaviour
             currentIndex++;
             if (currentIndex == correctPattern.Length)
             {
-                GameMaster.PlayClipAtCamera(finishSound);
                 displays[lastId].SetOn();
                 GameMaster.FinishGame();
             }
