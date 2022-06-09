@@ -98,16 +98,31 @@ Wie Sie VS-Code mit Unity einrichten können, erfahren Sie [hier](https://code.v
 | XR Interaction Toolkit | com.unity.xr.interaction.toolkit | 2.0.2 |
 | XR Plugin Management | com.unity.xr.management | 4.0.7 |
 
-Generiert mit meinem [Unity manifest to markdown converter](https://timtoller.github.io/unity-manifest-to-markdown/)
+Generiert mit meinem [Unity manifest to markdown converter](https://timtoller.github.io/unity-manifest-to-markdown/).
 
 ## Sounds und Assets
 
-Sounds bereitgestellt von [videvo](https://www.videvo.net)
+Sounds bereitgestellt von [videvo](https://www.videvo.net).
+
+### Objects
+
+- [Laterne](https://sketchfab.com/3d-models/lantern-f0b0ea89f20b4f10bb583c449ae04d9c)
+- [Bäume](https://sketchfab.com/3d-models/trees-dbd3f20966de4cae9170413b9c6f891d)
+- [Radio](https://sketchfab.com/3d-models/old-radio-ab346aeda5ab4c7882999f491d974619)
+- [Hase](https://sketchfab.com/3d-models/fnaf-security-breach-burntrap-056ddc9b449046de80f3128a982f7fb2)
+
+### Texturen
+
+- [Mauern](https://freepbr.com/materials/dirty-red-bricks1/)
+- [Erde](https://freepbr.com/materials/rocky-dirt/)
+- [Boden](https://freepbr.com/materials/gross-dirty-tiles-pbr/)
+- [Dach](https://freepbr.com/materials/rocky-asphalt-1/)
 
 ## Software/Hardware-Anforderungen
 
 [Oculus Hardware-Anforderungen](https://support.oculus.com/248749509016567/)
-Sie benötigen ein VR-Headset, in diesem Fall ein Oculus Rift/Quest/Quest2
+S
+ie benötigen ein VR-Headset, in diesem Fall ein Oculus Rift/Quest/Quest2
 
 [Beispiele](https://github.com/Unity-Technologies/XR-Interaction-Toolkit-Examples)
 
