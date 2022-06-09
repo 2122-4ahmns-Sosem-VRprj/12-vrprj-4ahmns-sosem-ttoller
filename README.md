@@ -71,16 +71,18 @@ Drückt der Spieler auf einen Falschen Knopf wird ein dramatischer Sound abgespi
 20. Build erstellen
 21. Endabgabe
 
-### Development platform: 
+### Development platform
+
 | Technology | Name |
 |---|---|
 | OS | Windows 10 |
 | Game Engine | Unity 2020.3.18f1 |
 | IDE | Visual Studio Code (With extensions) |
 
-Wie Sie VS-Code mit Unity einrichten können, erfahren Sie [hier] (https://code.visualstudio.com/docs/other/unity).
+Wie Sie VS-Code mit Unity einrichten können, erfahren Sie [hier](https://code.visualstudio.com/docs/other/unity).
 
 ### Packages
+
 | Package Name | Package ID | Version |
 |:---|:---|:---|
 | JetBrains Rider Editor | com.unity.ide.rider | 2.0.7 |
@@ -93,32 +95,36 @@ Wie Sie VS-Code mit Unity einrichten können, erfahren Sie [hier] (https://code.
 | Version Control | com.unity.collab-proxy | 1.9.0 |
 | Visual Studio Code Editor | com.unity.ide.vscode | 1.2.5 |
 | Visual Studio Editor | com.unity.ide.visualstudio | 2.0.11 |
-| XR Interaction Toolkit | com.unity.xr.interaction.toolkit | 2.0.0-pre.7 |
+| XR Interaction Toolkit | com.unity.xr.interaction.toolkit | 2.0.2 |
 | XR Plugin Management | com.unity.xr.management | 4.0.7 |
 
 Generiert mit meinem [Unity manifest to markdown converter](https://timtoller.github.io/unity-manifest-to-markdown/)
 
-## Sounds und Assets:
+## Sounds und Assets
+
 Sounds bereitgestellt von [videvo](https://www.videvo.net)
 
-## Software/Hardware-Anforderungen:
-Oculus Hardware-Anforderungen https://support.oculus.com/248749509016567/
+## Software/Hardware-Anforderungen
+
+[Oculus Hardware-Anforderungen](https://support.oculus.com/248749509016567/)
 Sie benötigen ein VR-Headset, in diesem Fall ein Oculus Rift/Quest/Quest2
 
-Beispiele: https://github.com/Unity-Technologies/XR-Interaction-Toolkit-Examples
+[Beispiele](https://github.com/Unity-Technologies/XR-Interaction-Toolkit-Examples)
 
 Beim Herunterladen treten Kompilierzeitfehler im Projekt auf. Um diese zu beheben, installieren Sie das XR Interaction Toolkit Paket über den Package Manager.
 
 ## Beschränkungen und Änderungen
-Da wir nur ein relativ kleines Zeitfenster hatten das Spiel fertig zu stellen, war es nur noch notwendig ein Minigame umzusetzen, vorrausgesetzt es gibt ein Intro und Outro. Darauf hin habe ich beschlossen nur das zweite Minigame, leicht zu modifizieren und umzusetzen. 
 
-Das Spiel wurde modifiziert zu einem gruseligen Suchspiel. Der User wird zu buttons geleitet die er in der richtigen reihenfolge betätigen muss, als unterstützung hat der Spieler einen Kompass im UI und der nächste Button spielt regelmäßig einen Glocken sound ab, damit man auch auditiv den Weg dorthin finden kann. Außerdem leuchtet der nächste Button auf und blinkt, damit ein visuelles Feedback auch entsteht. Die Reihenfolge und Farbe der Buttons ist randomized. Schafft es der Spieler alle Buttons in der Richtigen reihenfolge zu betätigen, so öffnet sich die Ausgangstür und der Spieler gewinnt. 
+Da wir nur ein relativ kleines Zeitfenster hatten das Spiel fertig zu stellen, war es nur noch notwendig ein Minigame umzusetzen, vorausgesetzt es gibt ein Intro und Outro. Darauf hin habe ich beschlossen nur das zweite Minigame, leicht zu modifizieren und umzusetzen.
 
-### Target platform: 
+Das Spiel wurde modifiziert zu einem gruseligen Suchspiel. Der User wird zu buttons geleitet die er in der richtigen Reihenfolge betätigen muss, als Unterstützung hat der Spieler einen Kompass im UI und der nächste Button spielt regelmäßig einen Glocken sound ab, damit man auch auditiv den Weg dorthin finden kann. Außerdem leuchtet der nächste Button auf und blinkt, damit ein visuelles Feedback auch entsteht. Die Reihenfolge und Farbe der Buttons ist randomized. Schafft es der Spieler alle Buttons in der Richtigen Reihenfolge zu betätigen, so öffnet sich die Ausgangstür und der Spieler gewinnt.
+
+### Target platform
+
 Oculus Rift/S; Quest/2
 
-### Third party material: 
+### Third party material
 
-Für Tests ohne Headset verwenden Sie den XR Device Simulator (im xr interaction toolkit Paket enthalten): https://www.youtube.com/watch?v=d4bTpkvBwrs
+Für Tests ohne Headset verwenden Sie den XR Device Simulator (im xr interaction toolkit Paket enthalten) [tutorial](https://www.youtube.com/watch?v=d4bTpkvBwrs)
 
 > Copyright by Tim Toller
