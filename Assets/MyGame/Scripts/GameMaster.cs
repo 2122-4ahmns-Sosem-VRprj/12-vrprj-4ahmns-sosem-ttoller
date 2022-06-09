@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class GameMaster : MonoBehaviour
 {
@@ -29,7 +30,7 @@ public class GameMaster : MonoBehaviour
         musicSource.clip = music;
         Debug.Log(musicSource);
         musicSource.Play();
-        LeanTween.value(gameObject, 0, 1, introSound.length).setOnUpdate((float val) =>
+        LeanTween.value(0, 1, introSound.length).setOnUpdate((float val) =>
         {
             musicSource.volume = val;
         });

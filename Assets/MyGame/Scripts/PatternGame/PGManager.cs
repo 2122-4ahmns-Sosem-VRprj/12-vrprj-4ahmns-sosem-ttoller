@@ -16,6 +16,7 @@ public class PGManager : MonoBehaviour
     public int[] correctPattern;
     public int currentIndex;
     public int nextCorrect;
+    public GameObject doorOut;
 
     private void Start()
     {
@@ -91,6 +92,13 @@ public class PGManager : MonoBehaviour
     }
     public GameObject GetNextButton()
     {
-        return buttons[nextCorrect].gameObject;
+        if (currentIndex < 9)
+        {
+            return buttons[nextCorrect].gameObject;
+        }
+        else
+        {
+            return doorOut;
+        }
     }
 }

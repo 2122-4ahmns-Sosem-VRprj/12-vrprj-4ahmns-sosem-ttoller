@@ -133,7 +133,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 6.76
+  MaxDistance: 18.63
   Pan2D: 0
   rolloffMode: 2
   BypassEffects: 0
@@ -152,8 +152,8 @@ AudioSource:
       inWeight: 0
       outWeight: 0
     - serializedVersion: 3
-      time: 0.21931857
-      value: 0.5395252
+      time: 0.23320407
+      value: 0.519025
       inSlope: -1.7655377
       outSlope: -1.7655377
       tangentMode: 0
