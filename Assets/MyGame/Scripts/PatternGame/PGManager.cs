@@ -49,14 +49,14 @@ public class PGManager : MonoBehaviour
             currentIndex++;
             if (currentIndex == correctPattern.Length)
             {
-                PlayClipAtCamera(finishSound);
+                GameMaster.PlayClipAtCamera(finishSound);
                 displays[lastId].SetOn();
                 GameMaster.FinishGame();
             }
             else
             {
                 nextCorrect = correctPattern[currentIndex];
-                PlayClipAtCamera(successSound);
+                GameMaster.PlayClipAtCamera(successSound);
                 Debug.Log("Correct input: now at " + currentIndex + "/" + correctPattern.Length + ", next correct input is " + nextCorrect);
                 displays[lastId].SetOn();
                 GiveHint();
@@ -89,10 +89,6 @@ public class PGManager : MonoBehaviour
         array = array.OrderBy(x => random.Next()).ToArray();
         Debug.Log("Pattern: " + String.Join(", ", array));
         return array;
-    }
-    private void PlayClipAtCamera(AudioClip clip)
-    {
-        AudioSource.PlayClipAtPoint(clip, Camera.main.transform.position);
     }
     public GameObject GetNextButton()
     {

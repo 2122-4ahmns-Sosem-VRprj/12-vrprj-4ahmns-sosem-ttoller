@@ -73,36 +73,36 @@ Drückt der Spieler auf einen Falschen Knopf wird ein dramatischer Sound abgespi
 
 ### Development platform
 
-| Technology | Name |
-|---|---|
-| OS | Windows 10 |
-| Game Engine | Unity 2020.3.18f1 |
-| IDE | Visual Studio Code (With extensions) |
+| Technology  | Name                                 |
+| ----------- | ------------------------------------ |
+| OS          | Windows 10                           |
+| Game Engine | Unity 2020.3.18f1                    |
+| IDE         | Visual Studio Code (With extensions) |
 
 Wie Sie VS-Code mit Unity einrichten können, erfahren Sie [hier](https://code.visualstudio.com/docs/other/unity).
 
 ### Packages
 
-| Package Name | Package ID | Version |
-|:---|:---|:---|
-| JetBrains Rider Editor | com.unity.ide.rider | 2.0.7 |
-| Oculus XR Plugin | com.unity.xr.oculus | 1.10.0 |
-| Test Framework | com.unity.test-framework | 1.1.29 |
-| TextMeshPro | com.unity.textmeshpro | 3.0.6 |
-| Timeline | com.unity.timeline | 1.4.8 |
-| Unity UI | com.unity.ugui | 1.0.0 |
-| Universal RP | com.unity.render-pipelines.universal | 10.6.0 |
-| Version Control | com.unity.collab-proxy | 1.9.0 |
-| Visual Studio Code Editor | com.unity.ide.vscode | 1.2.5 |
-| Visual Studio Editor | com.unity.ide.visualstudio | 2.0.11 |
-| XR Interaction Toolkit | com.unity.xr.interaction.toolkit | 2.0.2 |
-| XR Plugin Management | com.unity.xr.management | 4.0.7 |
+| Package Name              | Package ID                           | Version |
+| :------------------------ | :----------------------------------- | :------ |
+| JetBrains Rider Editor    | com.unity.ide.rider                  | 2.0.7   |
+| Oculus XR Plugin          | com.unity.xr.oculus                  | 1.10.0  |
+| Test Framework            | com.unity.test-framework             | 1.1.29  |
+| TextMeshPro               | com.unity.textmeshpro                | 3.0.6   |
+| Timeline                  | com.unity.timeline                   | 1.4.8   |
+| Unity UI                  | com.unity.ugui                       | 1.0.0   |
+| Universal RP              | com.unity.render-pipelines.universal | 10.6.0  |
+| Version Control           | com.unity.collab-proxy               | 1.9.0   |
+| Visual Studio Code Editor | com.unity.ide.vscode                 | 1.2.5   |
+| Visual Studio Editor      | com.unity.ide.visualstudio           | 2.0.11  |
+| XR Interaction Toolkit    | com.unity.xr.interaction.toolkit     | 2.0.2   |
+| XR Plugin Management      | com.unity.xr.management              | 4.0.7   |
 
 Generiert mit meinem [Unity manifest to markdown converter](https://timtoller.github.io/unity-manifest-to-markdown/).
 
 ## Sounds und Assets
 
-Sounds bereitgestellt von [videvo](https://www.videvo.net).
+Sounds bereitgestellt von [videvo](https://www.videvo.net/royalty-free-sound-effects/).
 
 ### Objects
 
@@ -110,6 +110,7 @@ Sounds bereitgestellt von [videvo](https://www.videvo.net).
 - [Bäume](https://sketchfab.com/3d-models/trees-dbd3f20966de4cae9170413b9c6f891d)
 - [Radio](https://sketchfab.com/3d-models/old-radio-ab346aeda5ab4c7882999f491d974619)
 - [Hase](https://sketchfab.com/3d-models/fnaf-security-breach-burntrap-056ddc9b449046de80f3128a982f7fb2)
+- [Door](https://sketchfab.com/3d-models/wooden-door-0643dee368fe4ed983910cf182ff64b8)
 
 ### Texturen
 
