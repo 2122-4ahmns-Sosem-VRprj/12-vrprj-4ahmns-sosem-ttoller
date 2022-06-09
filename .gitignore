@@ -61,3 +61,12 @@ sysinfo.txt
 crashlytics-build.properties
 
 .vscode
+Assets/MyGame/Materials/PatternGame/PGBlue.mat
+Assets/MyGame/Materials/PatternGame/PGGreen.mat
+Assets/MyGame/Materials/PatternGame/PGGreenBlue.mat
+Assets/MyGame/Materials/PatternGame/PGOrange.mat
+Assets/MyGame/Materials/PatternGame/PGPink.mat
+Assets/MyGame/Materials/PatternGame/PGRed.mat
+Assets/MyGame/Materials/PatternGame/PGTurquise.mat
+Assets/MyGame/Materials/PatternGame/PGViolette.mat
+Assets/MyGame/Materials/PatternGame/PGYellow.mat
