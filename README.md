@@ -1,4 +1,4 @@
-<h1 align="center">HTL-VRProject with XRInteractionToolki</h1>
+<h1 align="center">HTL-VRProject with XRInteractionToolkit</h1>
 <div align="center">Documentation of my VR Game</div>
 <div align="center">2021/2022</div>
 <div align="center">13 - Tim Toller</div>
@@ -71,49 +71,76 @@ Drückt der Spieler auf einen Falschen Knopf wird ein dramatischer Sound abgespi
 20. Build erstellen
 21. Endabgabe
 
-### Development platform: 
-| Technology | Name |
-|---|---|
-| OS | Windows 10 |
-| Game Engine | Unity 2020.3.18f1 |
-| IDE | Visual Studio Code (With extensions) |
+### Development platform
 
-To learn how to set up VS code with Unity, check [here](https://code.visualstudio.com/docs/other/unity).
+| Technology  | Name                                 |
+| ----------- | ------------------------------------ |
+| OS          | Windows 10                           |
+| Game Engine | Unity 2020.3.18f1                    |
+| IDE         | Visual Studio Code (With extensions) |
+
+Wie Sie VS-Code mit Unity einrichten können, erfahren Sie [hier](https://code.visualstudio.com/docs/other/unity).
 
 ### Packages
-| Package Name | Package ID | Version |
-|:---|:---|:---|
-| JetBrains Rider Editor | com.unity.ide.rider | 2.0.7 |
-| Oculus XR Plugin | com.unity.xr.oculus | 1.10.0 |
-| Test Framework | com.unity.test-framework | 1.1.29 |
-| TextMeshPro | com.unity.textmeshpro | 3.0.6 |
-| Timeline | com.unity.timeline | 1.4.8 |
-| Unity UI | com.unity.ugui | 1.0.0 |
-| Universal RP | com.unity.render-pipelines.universal | 10.6.0 |
-| Version Control | com.unity.collab-proxy | 1.9.0 |
-| Visual Studio Code Editor | com.unity.ide.vscode | 1.2.5 |
-| Visual Studio Editor | com.unity.ide.visualstudio | 2.0.11 |
-| XR Interaction Toolkit | com.unity.xr.interaction.toolkit | 2.0.0-pre.7 |
-| XR Plugin Management | com.unity.xr.management | 4.0.7 |
 
-Generated with my [Unity manifest to markdown converter](https://timtoller.github.io/unity-manifest-to-markdown/)
+| Package Name              | Package ID                           | Version |
+| :------------------------ | :----------------------------------- | :------ |
+| JetBrains Rider Editor    | com.unity.ide.rider                  | 2.0.7   |
+| Oculus XR Plugin          | com.unity.xr.oculus                  | 1.10.0  |
+| Test Framework            | com.unity.test-framework             | 1.1.29  |
+| TextMeshPro               | com.unity.textmeshpro                | 3.0.6   |
+| Timeline                  | com.unity.timeline                   | 1.4.8   |
+| Unity UI                  | com.unity.ugui                       | 1.0.0   |
+| Universal RP              | com.unity.render-pipelines.universal | 10.6.0  |
+| Version Control           | com.unity.collab-proxy               | 1.9.0   |
+| Visual Studio Code Editor | com.unity.ide.vscode                 | 1.2.5   |
+| Visual Studio Editor      | com.unity.ide.visualstudio           | 2.0.11  |
+| XR Interaction Toolkit    | com.unity.xr.interaction.toolkit     | 2.0.2   |
+| XR Plugin Management      | com.unity.xr.management              | 4.0.7   |
 
-## Sounds and Assets:
-Sounds provided by [videvo](https://www.videvo.net)
+Generiert mit meinem [Unity manifest to markdown converter](https://timtoller.github.io/unity-manifest-to-markdown/).
 
-## Software/Hardware Requirements: 
-Oculus hardware requirements https://support.oculus.com/248749509016567/
-You need a VR headset in this case an Oculus Rift/Quest/Quest2
+## Sounds und Assets
 
-Examples: https://github.com/Unity-Technologies/XR-Interaction-Toolkit-Examples
+Sounds bereitgestellt von [videvo](https://www.videvo.net/royalty-free-sound-effects/).
 
-When downlaoded, you have compile time errors in the project. To solve them install the XR interaction toolkit package via the Package Manager. (!Enable in Advanced Settings Preview Packages).
+### Objects
 
-### Target platform: 
+- [Laterne](https://sketchfab.com/3d-models/lantern-f0b0ea89f20b4f10bb583c449ae04d9c)
+- [Bäume](https://sketchfab.com/3d-models/trees-dbd3f20966de4cae9170413b9c6f891d)
+- [Radio](https://sketchfab.com/3d-models/old-radio-ab346aeda5ab4c7882999f491d974619)
+- [Hase](https://sketchfab.com/3d-models/fnaf-security-breach-burntrap-056ddc9b449046de80f3128a982f7fb2)
+- [Door](https://sketchfab.com/3d-models/wooden-door-0643dee368fe4ed983910cf182ff64b8)
+
+### Texturen
+
+- [Mauern](https://freepbr.com/materials/dirty-red-bricks1/)
+- [Erde](https://freepbr.com/materials/rocky-dirt/)
+- [Boden](https://freepbr.com/materials/gross-dirty-tiles-pbr/)
+- [Dach](https://freepbr.com/materials/rocky-asphalt-1/)
+
+## Software/Hardware-Anforderungen
+
+[Oculus Hardware-Anforderungen](https://support.oculus.com/248749509016567/)
+S
+ie benötigen ein VR-Headset, in diesem Fall ein Oculus Rift/Quest/Quest2
+
+[Beispiele](https://github.com/Unity-Technologies/XR-Interaction-Toolkit-Examples)
+
+Beim Herunterladen treten Kompilierzeitfehler im Projekt auf. Um diese zu beheben, installieren Sie das XR Interaction Toolkit Paket über den Package Manager.
+
+## Beschränkungen und Änderungen
+
+Da wir nur ein relativ kleines Zeitfenster hatten das Spiel fertig zu stellen, war es nur noch notwendig ein Minigame umzusetzen, vorausgesetzt es gibt ein Intro und Outro. Darauf hin habe ich beschlossen nur das zweite Minigame, leicht zu modifizieren und umzusetzen.
+
+Das Spiel wurde modifiziert zu einem gruseligen Suchspiel. Der User wird zu buttons geleitet die er in der richtigen Reihenfolge betätigen muss, als Unterstützung hat der Spieler einen Kompass im UI und der nächste Button spielt regelmäßig einen Glocken sound ab, damit man auch auditiv den Weg dorthin finden kann. Außerdem leuchtet der nächste Button auf und blinkt, damit ein visuelles Feedback auch entsteht. Die Reihenfolge und Farbe der Buttons ist randomized. Schafft es der Spieler alle Buttons in der Richtigen Reihenfolge zu betätigen, so öffnet sich die Ausgangstür und der Spieler gewinnt.
+
+### Target platform
+
 Oculus Rift/S; Quest/2
 
-### Third party material: 
+### Third party material
 
-For testing without a headset, use the XR Device Simulator (included in the xr interaction toolkit package):  https://www.youtube.com/watch?v=d4bTpkvBwrs
+Für Tests ohne Headset verwenden Sie den XR Device Simulator (im xr interaction toolkit Paket enthalten) [tutorial](https://www.youtube.com/watch?v=d4bTpkvBwrs)
 
 > Copyright by Tim Toller

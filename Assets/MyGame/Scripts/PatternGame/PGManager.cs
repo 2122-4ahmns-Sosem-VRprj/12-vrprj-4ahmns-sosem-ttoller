@@ -16,6 +16,7 @@ public class PGManager : MonoBehaviour
     public int[] correctPattern;
     public int currentIndex;
     public int nextCorrect;
+    public GameObject doorOut;
 
     private void Start()
     {
@@ -49,14 +50,13 @@ public class PGManager : MonoBehaviour
             currentIndex++;
             if (currentIndex == correctPattern.Length)
             {
-                PlayClipAtCamera(finishSound);
                 displays[lastId].SetOn();
                 GameMaster.FinishGame();
             }
             else
             {
                 nextCorrect = correctPattern[currentIndex];
-                PlayClipAtCamera(successSound);
+                GameMaster.PlayClipAtCamera(successSound);
                 Debug.Log("Correct input: now at " + currentIndex + "/" + correctPattern.Length + ", next correct input is " + nextCorrect);
                 displays[lastId].SetOn();
                 GiveHint();
@@ -90,12 +90,15 @@ public class PGManager : MonoBehaviour
         Debug.Log("Pattern: " + String.Join(", ", array));
         return array;
     }
-    private void PlayClipAtCamera(AudioClip clip)
-    {
-        AudioSource.PlayClipAtPoint(clip, Camera.main.transform.position);
-    }
     public GameObject GetNextButton()
     {
-        return buttons[nextCorrect].gameObject;
+        if (currentIndex < 9)
+        {
+            return buttons[nextCorrect].gameObject;
+        }
+        else
+        {
+            return doorOut;
+        }
     }
 }
