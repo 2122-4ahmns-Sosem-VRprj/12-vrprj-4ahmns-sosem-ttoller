@@ -11,8 +11,15 @@ public class PGDisplay : MonoBehaviour
     public float maxEmission = 2f;
     public float minEmission = 0f;
     public float emissionRate = 0.5f;
-    public int signalOffset = 10;
+    public float signalOffset = 10;
     public PGButton button;
+    private PGManager manager;
+    private void Start()
+    {
+        manager = GameObject.FindObjectOfType<PGManager>();
+    }
+
+
     public void SetOff()
     {
         state = DisplayStates.OFF;

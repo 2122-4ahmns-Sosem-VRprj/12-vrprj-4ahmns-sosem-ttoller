@@ -6,7 +6,7 @@ public class PGButton : MonoBehaviour
 {
     public int id;
     public AudioClip signalSound;
-    private PGManager manager;
+    public PGManager manager;
     private AudioSource audioSource;
 
     private void Start()
@@ -28,5 +28,9 @@ public class PGButton : MonoBehaviour
     {
         print("Play sound at " + transform.position + ", from " + id);
         audioSource.Play();
+    }
+    public PGDisplay GetDisplay()
+    {
+        return manager.displays[id];
     }
 }

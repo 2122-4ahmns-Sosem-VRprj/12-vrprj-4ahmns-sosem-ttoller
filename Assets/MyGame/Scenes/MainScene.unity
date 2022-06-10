@@ -310,6 +310,7 @@ MonoBehaviour:
   introSound: {fileID: 8300000, guid: 3197d3f22d2f4484e85d4dcd53ce76c3, type: 3}
   outroSound: {fileID: 8300000, guid: 8b1c51ccb6ca63341a93ba3ddd49d8a0, type: 3}
   music: {fileID: 8300000, guid: 54c599e9631ee0b4eaa0d0d53b0e9101, type: 3}
+  heartbeat: {fileID: 0}
 --- !u!4 &19903244
 Transform:
   m_ObjectHideFlags: 0
@@ -20587,6 +20588,8 @@ MonoBehaviour:
   currentIndex: 0
   nextCorrect: 0
   doorOut: {fileID: 544242105}
+  heartbeat: {fileID: 8300000, guid: cc4f7866996a36340a57b7bd4b560219, type: 3}
+  beats: 0
 --- !u!1 &1793061508
 GameObject:
   m_ObjectHideFlags: 0

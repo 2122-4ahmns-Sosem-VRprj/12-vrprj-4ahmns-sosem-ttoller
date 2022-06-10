@@ -38,7 +38,7 @@ public class DoorTrigger : MonoBehaviour
         doorAudio.PlayOneShot(doorClose);
         LeanTween.rotateY(door, -117, doorFall.length).setEaseInCirc().setOnComplete(() =>
         {
-            blackout.FadeOut();
+            blackout.FadeOut(false);
         }).setDelay(doorClose.length - 0.5f).setOnStart(() =>
         {
             doorAudio.PlayOneShot(doorFall);

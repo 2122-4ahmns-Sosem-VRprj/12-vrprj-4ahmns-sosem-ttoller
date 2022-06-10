@@ -12,6 +12,8 @@ public class GameMaster : MonoBehaviour
     public AudioClip music;
     private static GameObject exitTrigger;
     private static AudioSource musicSource;
+    public AudioClip heartbeat;
+
     public static void FinishGame()
     {
         PlayClipAtCamera(_outroSound);
@@ -30,7 +32,9 @@ public class GameMaster : MonoBehaviour
             musicSource.volume = val;
         });
         PlayClipAtCamera(introSound);
+
     }
+
     public static void PlayClipAtCamera(AudioClip clip)
     {
         AudioSource.PlayClipAtPoint(clip, Camera.main.transform.position);

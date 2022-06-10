@@ -17,6 +17,9 @@ public class PGManager : MonoBehaviour
     public int currentIndex;
     public int nextCorrect;
     public GameObject doorOut;
+    public AudioClip heartbeat;
+    public float heatBeatOffset;
+    public int beats = 0;
 
     private void Start()
     {
@@ -35,6 +38,20 @@ public class PGManager : MonoBehaviour
             button.gameObject.GetComponent<Renderer>().material = mat;
         }
         ResetDisplays();
+        StartCoroutine(HeartBeat());
+    }
+    IEnumerator HeartBeat()
+    {
+        yield return new WaitForSeconds(heatBeatOffset);
+        beats++;
+        float exponent = (beats * -0.1f);
+        heatBeatOffset = Mathf.Clamp(Mathf.Exp(exponent) * 20, 0.5f, 20);
+        if (heatBeatOffset == 0.5f)
+        {
+            GameObject.FindObjectOfType<BlackoutController>().FadeOut(true);
+        }
+        GameMaster.PlayClipAtCamera(heartbeat);
+        StartCoroutine(HeartBeat());
     }
     private void GiveHint()
     {
@@ -48,9 +65,11 @@ public class PGManager : MonoBehaviour
         {
             int lastId = correctPattern[currentIndex];
             currentIndex++;
+            beats = 0;
             if (currentIndex == correctPattern.Length)
             {
                 displays[lastId].SetOn();
+                StopAllCoroutines();
                 GameMaster.FinishGame();
             }
             else
