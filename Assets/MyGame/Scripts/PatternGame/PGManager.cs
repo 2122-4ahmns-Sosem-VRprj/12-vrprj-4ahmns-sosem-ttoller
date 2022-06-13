@@ -20,6 +20,7 @@ public class PGManager : MonoBehaviour
     public AudioClip heartbeat;
     public float heatBeatOffset;
     public int beats = 0;
+    public GameObject deathRoom;
 
     private void Start()
     {
@@ -49,6 +50,9 @@ public class PGManager : MonoBehaviour
         if (heatBeatOffset == 0.5f)
         {
             GameObject.FindObjectOfType<BlackoutController>().FadeOut(true);
+            GameObject player = GameObject.FindWithTag("Player");
+            player.transform.position = deathRoom.transform.position;
+            player.transform.eulerAngles = deathRoom.transform.eulerAngles;
         }
         GameMaster.PlayClipAtCamera(heartbeat);
         StartCoroutine(HeartBeat());
