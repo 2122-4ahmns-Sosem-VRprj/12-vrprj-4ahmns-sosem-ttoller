@@ -139,6 +139,8 @@ Da wir nur ein relativ kleines Zeitfenster hatten das Spiel fertig zu stellen, w
 
 Das Spiel wurde modifiziert zu einem gruseligen Suchspiel. Der User wird zu buttons geleitet die er in der richtigen Reihenfolge betätigen muss, als Unterstützung hat der Spieler einen Kompass im UI und der nächste Button spielt regelmäßig einen Glocken sound ab, damit man auch auditiv den Weg dorthin finden kann. Außerdem leuchtet der nächste Button auf und blinkt, damit ein visuelles Feedback auch entsteht. Die Reihenfolge und Farbe der Buttons ist randomized. Schafft es der Spieler alle Buttons in der Richtigen Reihenfolge zu betätigen, so öffnet sich die Ausgangstür und der Spieler gewinnt.
 
+Wenn der Spieler mehr als etwa 2 Minuten braucht den nächsten Button zu finden, stirbt er. Damit der Spieler weiß, wie viel Zeit ihm noch bleibt wird ein Herzschlag immer schneller und schneller. Ist die Zeit vorbei, wird der Spieler in einen dunklem Raum mit einem einsamen Ei teleportiert, wo er dann schlussendlich vom bösen Osterhasen gefangen wird.
+
 ### Target platform
 
 Oculus Rift/S; Quest/2
