@@ -39,7 +39,7 @@ public class BlackoutController : MonoBehaviour
                 .setOnComplete(() =>
                 {
                     Application.Quit();
-                    UnityEditor.EditorApplication.isPlaying = false;
+                    Debug.Break();
                 });
             }
             else
@@ -52,7 +52,7 @@ public class BlackoutController : MonoBehaviour
                 }).setOnComplete(() =>
                 {
                     Application.Quit();
-                    UnityEditor.EditorApplication.isPlaying = false;
+                    Debug.Break();
                 });
             }
         }
