@@ -1,0 +1,11 @@
+Model Information:
+* title:	Abandoned house
+* source:	https://sketchfab.com/3d-models/abandoned-house-2f220af6ed4a45c792574da843093c3f
+* author:	Linker_34 (https://sketchfab.com/Linker_34)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Abandoned house" (https://sketchfab.com/3d-models/abandoned-house-2f220af6ed4a45c792574da843093c3f) by Linker_34 (https://sketchfab.com/Linker_34) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
