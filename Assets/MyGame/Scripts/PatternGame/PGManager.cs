@@ -21,9 +21,11 @@ public class PGManager : MonoBehaviour
     public float heatBeatOffset;
     public int beats = 0;
     public GameObject deathRoom;
+    private BlackoutController blackout;
 
     private void Start()
     {
+        blackout = GameObject.FindObjectOfType<BlackoutController>();
         for (int i = 0; i < 9; i++)
         {
             Material mat = materials[i];
@@ -46,9 +48,10 @@ public class PGManager : MonoBehaviour
         yield return new WaitForSeconds(heatBeatOffset);
         beats++;
         float exponent = (beats * -0.1f);
-        heatBeatOffset = Mathf.Clamp(Mathf.Exp(exponent) * 20, 0.5f, 20);
-        if (heatBeatOffset == 0.5f)
+        heatBeatOffset = Mathf.Clamp(Mathf.Exp(exponent) * 15, 0.5f, 20);
+        if (heatBeatOffset == 0.5f && !blackout.hasFadeOut)
         {
+            GameMaster.PlayClipAtCamera(failSound);
             GameObject.FindObjectOfType<BlackoutController>().FadeOut(true);
             GameObject player = GameObject.FindWithTag("Player");
             player.transform.position = deathRoom.transform.position;

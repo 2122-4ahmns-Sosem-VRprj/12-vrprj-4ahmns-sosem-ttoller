@@ -7,8 +7,10 @@ public class BlackoutController : MonoBehaviour
 {
     public Image img;
     private int frames;
-    private bool hasFadeIn;
-    private bool hasFadeOut = false;
+    public bool hasFadeIn;
+    public bool hasFadeOut = false;
+    public AudioClip deathWhisper;
+    public AudioClip womanScream;
     private void Update()
     {
         if (!hasFadeIn)
@@ -23,20 +25,34 @@ public class BlackoutController : MonoBehaviour
             hasFadeOut = true;
             if (death)
             {
-                LeanTween.value(0, 1, 2).setOnUpdate((float val) =>
-                            {
-                                img.color = new Color(0, 0, 0, val);
-                            }).setDelay(4);
+                GameMaster.PlayClipAtCamera(deathWhisper);
+                LeanTween.value(0, 1, 4)
+                .setOnStart(() =>
+                {
+                    GameMaster.PlayClipAtCamera(womanScream);
+                })
+                .setOnUpdate((float val) =>
+                {
+                    img.color = new Color(0, 0, 0, val);
+                })
+                .setDelay(4)
+                .setOnComplete(() =>
+                {
+                    Application.Quit();
+                    UnityEditor.EditorApplication.isPlaying = false;
+                });
             }
             else
             {
 
-                LeanTween.value(0, 1, 2).setOnUpdate((float val) =>
+                LeanTween.value(0, 1, 2)
+                .setOnUpdate((float val) =>
                 {
                     img.color = new Color(0, 0, 0, val);
                 }).setOnComplete(() =>
                 {
                     Application.Quit();
+                    UnityEditor.EditorApplication.isPlaying = false;
                 });
             }
         }
