@@ -114,6 +114,7 @@ Sounds bereitgestellt von [videvo](https://www.videvo.net/royalty-free-sound-eff
 - [Table](https://sketchfab.com/3d-models/bedside-table-2-915fffa0a7d943d0980c835784340c77)
 - [Eggs Red](https://sketchfab.com/3d-models/easter-eggs-red-collection-b79af3f7aa8543518628590f39cd2d31)
 - [Eggs Blue](https://sketchfab.com/3d-models/easter-eggs-blue-collection-a9d3459970b348d7b93741e45f494035)
+- [House](https://sketchfab.com/3d-models/abandoned-house-2f220af6ed4a45c792574da843093c3f)
 
 ### Texturen
 
