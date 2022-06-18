@@ -53,7 +53,8 @@ public class BlackoutController : MonoBehaviour
                 {
                     Application.Quit();
                     Debug.Break();
-                });
+                })
+                .setDelay(4);
             }
         }
     }
