@@ -51,11 +51,11 @@ public class PGManager : MonoBehaviour
         heatBeatOffset = Mathf.Clamp(Mathf.Exp(exponent) * 10, 0.5f, 20);
         if (heatBeatOffset == 0.5f && !blackout.hasFadeOut)
         {
-            GameMaster.PlayClipAtCamera(failSound);
-            GameObject.FindObjectOfType<BlackoutController>().FadeOut(true);
             GameObject player = GameObject.FindWithTag("Player");
             player.transform.position = deathRoom.transform.position;
             player.transform.eulerAngles = deathRoom.transform.eulerAngles;
+            GameMaster.PlayClipAtCamera(failSound);
+            GameObject.FindObjectOfType<BlackoutController>().FadeOut(true);
         }
         GameMaster.PlayClipAtCamera(heartbeat);
         StartCoroutine(HeartBeat());
