@@ -48,7 +48,7 @@ public class PGManager : MonoBehaviour
         yield return new WaitForSeconds(heatBeatOffset);
         beats++;
         float exponent = (beats * -0.1f);
-        heatBeatOffset = Mathf.Clamp(Mathf.Exp(exponent) * 15, 0.5f, 20);
+        heatBeatOffset = Mathf.Clamp(Mathf.Exp(exponent) * 10, 0.5f, 20);
         if (heatBeatOffset == 0.5f && !blackout.hasFadeOut)
         {
             GameMaster.PlayClipAtCamera(failSound);

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class BlackoutController : MonoBehaviour
@@ -38,8 +39,8 @@ public class BlackoutController : MonoBehaviour
                 .setDelay(4)
                 .setOnComplete(() =>
                 {
-                    Application.Quit();
-                    Debug.Break();
+                    Scene scene = SceneManager.GetActiveScene();
+                    SceneManager.LoadScene(scene.name);
                 });
             }
             else
